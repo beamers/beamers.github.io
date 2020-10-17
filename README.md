@@ -1,2 +1,2 @@
-# beamers.github.io
+# brianbeames.github.io
 My personal webpage
