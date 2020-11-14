@@ -13115,11 +13115,11 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  This is the format that I am trying to replicate in my code:  &lt;a href=&quot; website &quot;&gt;  title &lt;/a&gt;&lt;br /&gt;</span>
-<span class="c1"># An example:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is the format that I am trying to replicate in my code:  &lt;a href=&quot; website &quot;&gt;  title &lt;/a&gt;&lt;br /&gt;</span>
+<span class="c1"># An example: </span>
 <span class="c1"># &lt;a href=&quot;http://localhost:10080&quot;&gt;SAS Studio&lt;/a&gt;&lt;br /&gt;</span>
 </pre></div>
 
@@ -13130,10 +13130,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing important libraries</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 
     </div>
@@ -13143,7 +13144,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Transferring my data from csv file into pandas dataframe</span>
@@ -13158,10 +13159,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is to see the contents of the dataframe</span>
+<span class="n">weblinks</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13174,7 +13176,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13204,18 +13206,28 @@ div#notebook {
   <tbody>
     <tr>
       <th>0</th>
-      <td>https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0</td>
-      <td>20 Great Pandas Tricks For Data Science</td>
+      <td>https://github.com/danistefanovic/build-your-o...</td>
+      <td>Build your own insert technology here</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>https://medium.com/better-programming/5-underrated-python-libraries-to-use-in-your-next-data-science-project-4ae2a73c4728</td>
-      <td>5 Underrated Python Libraries to Use in Your Next Data Science Project</td>
+      <td>https://github.com/EbookFoundation/free-progra...</td>
+      <td>Freely available programming books</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>https://medium.com/better-programming/12-best-youtube-channels-to-learn-data-science-in-2020-e92a72b4d91c</td>
-      <td>12 Best YouTube Channels to Learn Data Science in 2020</td>
+      <td>https://github.com/ohmyzsh/ohmyzsh</td>
+      <td>A delightful community driven with 1700 plus c...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>https://github.com/jwasham/coding-interview-un...</td>
+      <td>A complete computer science study plan to beco...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>https://github.com/github/gitignore</td>
+      <td>A collection of useful gitignore templates</td>
     </tr>
   </tbody>
 </table>
@@ -13230,10 +13242,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&lt;a href=</span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&quot;</span><span class="s1">&gt;&#39;</span> <span class="o">+</span> <span class="s1">&#39;&lt;/a&gt;&lt;br/&gt;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Making sure I get the code right</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&lt;a href=</span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&quot;</span><span class="s1">&gt;&#39;</span> <span class="o">+</span> <span class="s1">&#39;&lt;/a&gt;&lt;br/&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13261,10 +13274,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">weblinks</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Printing the whole dataframe</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">weblinks</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13281,15 +13295,31 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>                                                                                                                     website  \
-0                                        https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0   
-1  https://medium.com/better-programming/5-underrated-python-libraries-to-use-in-your-next-data-science-project-4ae2a73c4728   
-2                  https://medium.com/better-programming/12-best-youtube-channels-to-learn-data-science-in-2020-e92a72b4d91c   
+<pre>                                              website  \
+0   https://github.com/danistefanovic/build-your-o...   
+1   https://github.com/EbookFoundation/free-progra...   
+2                  https://github.com/ohmyzsh/ohmyzsh   
+3   https://github.com/jwasham/coding-interview-un...   
+4                 https://github.com/github/gitignore   
+5   https://github.com/donnemartin/system-design-p...   
+6          https://github.com/public-apis/public-apis   
+7    https://github.com/jlevy/the-art-of-command-line   
+8   https://github.com/trekhleb/javascript-algorithms   
+9   https://github.com/kamranahmedse/developer-roa...   
+10  https://github.com/tirthajyoti/PyTorch_Machine...   
 
-                                                                    title  
-0                                 20 Great Pandas Tricks For Data Science  
-1  5 Underrated Python Libraries to Use in Your Next Data Science Project  
-2                  12 Best YouTube Channels to Learn Data Science in 2020  
+                                                title  
+0               Build your own insert technology here  
+1                  Freely available programming books  
+2   A delightful community driven with 1700 plus c...  
+3   A complete computer science study plan to beco...  
+4          A collection of useful gitignore templates  
+5   Learn how to design large scale systems Prep f...  
+6   A collective list of free APIs for use in soft...  
+7                Master the command line, in one page  
+8   Algorithms and data structures implemented in ...  
+9         Roadmap to becoming a web developer in 2020  
+10    Machine learning Deep Learning CNN with PyTorch  
 </pre>
 </div>
 </div>
@@ -13300,10 +13330,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting for the first item</span>
+<span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13316,14 +13347,14 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>website    https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0
-title                                                  20 Great Pandas Tricks For Data Science
+<pre>website    https://github.com/danistefanovic/build-your-o...
+title                  Build your own insert technology here
 Name: 0, dtype: object</pre>
 </div>
 
@@ -13335,10 +13366,11 @@ Name: 0, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting for the second item</span>
+<span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13351,14 +13383,14 @@ Name: 0, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>website    https://medium.com/better-programming/5-underrated-python-libraries-to-use-in-your-next-data-science-project-4ae2a73c4728
-title                                                         5 Underrated Python Libraries to Use in Your Next Data Science Project
+<pre>website    https://github.com/EbookFoundation/free-progra...
+title                     Freely available programming books
 Name: 1, dtype: object</pre>
 </div>
 
@@ -13370,10 +13402,11 @@ Name: 1, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting for the third item</span>
+<span class="n">weblinks</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13386,14 +13419,14 @@ Name: 1, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>website    https://medium.com/better-programming/12-best-youtube-channels-to-learn-data-science-in-2020-e92a72b4d91c
-title                                                         12 Best YouTube Channels to Learn Data Science in 2020
+<pre>website                   https://github.com/ohmyzsh/ohmyzsh
+title      A delightful community driven with 1700 plus c...
 Name: 2, dtype: object</pre>
 </div>
 
@@ -13405,10 +13438,11 @@ Name: 2, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Learning the difference between loc and iloc</span>
+<span class="n">weblinks</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13421,14 +13455,14 @@ Name: 2, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>website    https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0
-title                                                  20 Great Pandas Tricks For Data Science
+<pre>website    https://github.com/danistefanovic/build-your-o...
+title                  Build your own insert technology here
 Name: 0, dtype: object</pre>
 </div>
 
@@ -13440,10 +13474,11 @@ Name: 0, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;website&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting just for the websites</span>
+<span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;website&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13456,15 +13491,23 @@ Name: 0, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0                                          https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0
-1    https://medium.com/better-programming/5-underrated-python-libraries-to-use-in-your-next-data-science-project-4ae2a73c4728
-2                    https://medium.com/better-programming/12-best-youtube-channels-to-learn-data-science-in-2020-e92a72b4d91c
+<pre>0     https://github.com/danistefanovic/build-your-o...
+1     https://github.com/EbookFoundation/free-progra...
+2                    https://github.com/ohmyzsh/ohmyzsh
+3     https://github.com/jwasham/coding-interview-un...
+4                   https://github.com/github/gitignore
+5     https://github.com/donnemartin/system-design-p...
+6            https://github.com/public-apis/public-apis
+7      https://github.com/jlevy/the-art-of-command-line
+8     https://github.com/trekhleb/javascript-algorithms
+9     https://github.com/kamranahmedse/developer-roa...
+10    https://github.com/tirthajyoti/PyTorch_Machine...
 Name: website, dtype: object</pre>
 </div>
 
@@ -13476,10 +13519,11 @@ Name: website, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Selecting just for the titles</span>
+<span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13492,15 +13536,23 @@ Name: website, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[74]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0                                   20 Great Pandas Tricks For Data Science
-1    5 Underrated Python Libraries to Use in Your Next Data Science Project
-2                    12 Best YouTube Channels to Learn Data Science in 2020
+<pre>0                 Build your own insert technology here
+1                    Freely available programming books
+2     A delightful community driven with 1700 plus c...
+3     A complete computer science study plan to beco...
+4            A collection of useful gitignore templates
+5     Learn how to design large scale systems Prep f...
+6     A collective list of free APIs for use in soft...
+7                  Master the command line, in one page
+8     Algorithms and data structures implemented in ...
+9           Roadmap to becoming a web developer in 2020
+10      Machine learning Deep Learning CNN with PyTorch
 Name: title, dtype: object</pre>
 </div>
 
@@ -13512,10 +13564,11 @@ Name: title, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;max_colwidth&#39;</span><span class="p">,</span> <span class="mi">400000</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Making sure the string is long enough so it will print the entire title or website</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;max_colwidth&#39;</span><span class="p">,</span> <span class="mi">400000</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13525,10 +13578,11 @@ Name: title, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&lt;a href=</span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;website&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&quot;</span><span class="s1">&gt;&#39;</span> <span class="o">+</span> <span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/a&gt;&lt;br/&gt;&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># My desired end product</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&lt;a href=</span><span class="se">\&quot;</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;website&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\&quot;</span><span class="s1">&gt;&#39;</span> <span class="o">+</span> <span class="n">weblinks</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&lt;/a&gt;&lt;br/&gt;&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13545,9 +13599,17 @@ Name: title, dtype: object</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0                                                                         &lt;a href=&#34;https://towardsdatascience.com/20-great-pandas-tricks-for-data-science-3a6daed71da0&#34;&gt;20 Great Pandas Tricks For Data Science&lt;/a&gt;&lt;br/&gt;
-1    &lt;a href=&#34;https://medium.com/better-programming/5-underrated-python-libraries-to-use-in-your-next-data-science-project-4ae2a73c4728&#34;&gt;5 Underrated Python Libraries to Use in Your Next Data Science Project&lt;/a&gt;&lt;br/&gt;
-2                                    &lt;a href=&#34;https://medium.com/better-programming/12-best-youtube-channels-to-learn-data-science-in-2020-e92a72b4d91c&#34;&gt;12 Best YouTube Channels to Learn Data Science in 2020&lt;/a&gt;&lt;br/&gt;
+<pre>0                                                                                                                                                                                                                                                                                            &lt;a href=&#34;https://github.com/danistefanovic/build-your-own-x&#34;&gt;Build your own insert technology here&lt;/a&gt;&lt;br/&gt;
+1                                                                                                                                                                                                                                                                                        &lt;a href=&#34;https://github.com/EbookFoundation/free-programming-books&#34;&gt;Freely available programming books&lt;/a&gt;&lt;br/&gt;
+2     &lt;a href=&#34;https://github.com/ohmyzsh/ohmyzsh&#34;&gt;A delightful community driven with 1700 plus contributors framework for managing your zsh configuration Includes 200 plus optional plugins rails git OSX hub capistrano brew ant php python etc over 140 themes to spice up your morning and an autoupdate tool so that makes it easy to keep up with the latest updates from the community.&lt;/a&gt;&lt;br/&gt;
+3                                                                                                                                                                                                                                                        &lt;a href=&#34;https://github.com/jwasham/coding-interview-university&#34;&gt;A complete computer science study plan to become a software engineer.&lt;/a&gt;&lt;br/&gt;
+4                                                                                                                                                                                                                                                                                                      &lt;a href=&#34;https://github.com/github/gitignore&#34;&gt;A collection of useful gitignore templates&lt;/a&gt;&lt;br/&gt;
+5                                                                                                                                                                                                                           &lt;a href=&#34;https://github.com/donnemartin/system-design-primer&#34;&gt;Learn how to design large scale systems Prep for the system design interview Includes Anki flashcards&lt;/a&gt;&lt;br/&gt;
+6                                                                                                                                                                                                                                                                   &lt;a href=&#34;https://github.com/public-apis/public-apis&#34;&gt;A collective list of free APIs for use in software and web development&lt;/a&gt;&lt;br/&gt;
+7                                                                                                                                                                                                                                                                                               &lt;a href=&#34;https://github.com/jlevy/the-art-of-command-line&#34;&gt;Master the command line, in one page&lt;/a&gt;&lt;br/&gt;
+8                                                                                                                                                                                                                          &lt;a href=&#34;https://github.com/trekhleb/javascript-algorithms&#34;&gt;Algorithms and data structures implemented in JavaScript with explanations and links to further readings&lt;/a&gt;&lt;br/&gt;
+9                                                                                                                                                                                                                                                                                      &lt;a href=&#34;https://github.com/kamranahmedse/developer-roadmap&#34;&gt;Roadmap to becoming a web developer in 2020&lt;/a&gt;&lt;br/&gt;
+10                                                                                                                                                                                                                                                                            &lt;a href=&#34;https://github.com/tirthajyoti/PyTorch_Machine_Learning&#34;&gt;Machine learning Deep Learning CNN with PyTorch&lt;/a&gt;&lt;br/&gt;
 dtype: object
 </pre>
 </div>
